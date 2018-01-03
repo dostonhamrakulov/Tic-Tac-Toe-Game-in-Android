@@ -3,9 +3,11 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="cross">X</string>
-    <string name="naught">O</string>
+    <string name="cross">User</string>
+    <string name="naught">Computer</string>
     <string name="start">Start</string>
     <string name="reset">Reset</string>
     <string name="winnable">Winnable</string>
+    <string name="playerInfo">X - player</string>
+    <string name="computerInfo">O - computer</string>
 </resources>
