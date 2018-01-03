@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     public Button button1, button2, button3, button4, button5, button6,
             button7, button8, button9, start, reset;
@@ -54,17 +54,17 @@ public class MainActivity extends AppCompatActivity {
 
         text = (TextView) findViewById(R.id.text);
 
-        button1.setOnClickListener((View.OnClickListener) this);
-        button2.setOnClickListener((View.OnClickListener) this);
-        button3.setOnClickListener((View.OnClickListener) this);
-        button4.setOnClickListener((View.OnClickListener) this);
-        button5.setOnClickListener((View.OnClickListener) this);
-        button6.setOnClickListener((View.OnClickListener) this);
-        button7.setOnClickListener((View.OnClickListener) this);
-        button8.setOnClickListener((View.OnClickListener) this);
-        button9.setOnClickListener((View.OnClickListener) this);
-        start.setOnClickListener((View.OnClickListener) this);
-        reset.setOnClickListener((View.OnClickListener) this);
+        button1.setOnClickListener(this);
+        button2.setOnClickListener(this);
+        button3.setOnClickListener(this);
+        button4.setOnClickListener(this);
+        button5.setOnClickListener(this);
+        button6.setOnClickListener(this);
+        button7.setOnClickListener(this);
+        button8.setOnClickListener(this);
+        button9.setOnClickListener(this);
+        start.setOnClickListener(this);
+        reset.setOnClickListener(this);
     }
 
 
@@ -246,5 +246,10 @@ public class MainActivity extends AppCompatActivity {
     public boolean naughtsDiagonal() {
         return (button1.getText().equals("O") && button5.getText().equals("O") && button9.getText().equals("O")) ||
                 (button3.getText().equals("O") && button5.getText().equals("O") && button7.getText().equals("O"));
+    }
+
+    @Override
+    public void onPointerCaptureChanged(boolean hasCapture) {
+
     }
 }
