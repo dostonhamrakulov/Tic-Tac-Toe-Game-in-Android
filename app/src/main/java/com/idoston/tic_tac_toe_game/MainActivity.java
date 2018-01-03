@@ -97,7 +97,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.start:
                 // Make the menu item and views required to start the game invisible
                 item = menu.findItem(R.id.winnable);
-                item.setVisible(false);
+                item.setVisible(true);
                 start.setVisibility(View.INVISIBLE);
                 naught.setVisibility(View.INVISIBLE);
                 cross.setVisibility(View.INVISIBLE);
