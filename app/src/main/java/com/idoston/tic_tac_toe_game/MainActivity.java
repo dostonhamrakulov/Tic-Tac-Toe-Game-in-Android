@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Exit_alert();
             return true;
         } else if (id == R.id.id_about_using){
-            Toast.makeText(MainActivity.this, "If you have any question or suggestions, you can reach at me by doston2509@gmail.com",
+            Toast.makeText(MainActivity.this, "If you have any questions, you can reach at me by doston2509@gmail.com",
                     Toast.LENGTH_LONG).show();
         }
 
