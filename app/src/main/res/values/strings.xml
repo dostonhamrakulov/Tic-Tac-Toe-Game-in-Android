@@ -10,4 +10,8 @@
     <string name="winnable">Winnable</string>
     <string name="playerInfo">X - player</string>
     <string name="computerInfo">O - computer</string>
+
+    <string name="action_contactus">Contact Us</string>
+    <string name="action_aboutus">About Us</string>
+    <string name="action_exit_app">Exit</string>
 </resources>
